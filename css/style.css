@@ -11,7 +11,19 @@
     list-style: none;
     text-decoration: none;
 }
-
+header{
+    position: fixed;
+    width: 100%;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 
 .top-title{
@@ -39,6 +51,7 @@
     gap: 55px;
 }
 .nav-link{
+    transition: all 0.3s;
     color:  rgba(221, 228, 228, 1);
 }
 .nav-link:hover{
@@ -54,6 +67,7 @@
     color:  rgba(221, 228, 228, 1);
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
     
 }
 .btn button:hover{
@@ -94,7 +108,7 @@
     justify-content: center;
 }
 .team-desc{
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
 }
 .team-img-bac{
@@ -150,3 +164,77 @@
     height: 100%;
     object-fit: cover;
 }
+.prs-box{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.prs-box-item{
+    width: 45%;
+   display: flex;
+   color: rgb(10, 18, 18);
+   padding: 40px 20px ;
+   border-radius: 10px;
+  background-color:  rgba(242, 248, 248, 1);
+   justify-content: space-between;    
+}
+
+
+
+/* way */
+
+
+
+.way-parent{
+    padding: 20px 100px;
+}
+.way{
+    width: 100%;
+    height: 40vh;
+    color: rgba(173, 201, 166, 1);
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url(../img/way-img.svg);
+}
+
+.way-box{
+    width: 30%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.way-box-title{
+    font-size: 36px;
+}
+.way-box-desc{
+    display: flex;
+    gap: 20px;
+}
+.way-box-desc h3{
+    font-size: 40px;
+}
+.way-box-desc h6{
+    font-size: 12px;
+    width: 30%;
+}
+.way-box-desc .btn{
+background-color: #84A17D ;
+/* padding: 10px 30px; */
+width: 120px;
+height: 50px;
+border-radius: 4px;
+color:  rgba(221, 228, 228, 1);
+border: none;
+cursor: pointer;
+transition: all 0.3s;
+
+}
+ .way-box-desc  .btn:hover{
+color: #84A17D;
+background-color: #165959;
+}
+
